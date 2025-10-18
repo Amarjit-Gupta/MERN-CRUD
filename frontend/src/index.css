@@ -308,7 +308,7 @@ input:focus {
 
 .column1 {
   height: 3.5rem;
-  width: 11rem;
+  width: 12rem;
   border: grey solid 1px;
   text-align: center;
 }
@@ -322,7 +322,7 @@ input:focus {
 
 .column3 {
   height: 3.5rem;
-  width: 13rem;
+  width: 14rem;
   border: grey solid 1px;
   text-align: center;
 }
@@ -435,7 +435,7 @@ input:focus {
 
 @media only screen and (max-width:1050px) {
   .allData-main {
-    width: 45rem;
+    width: 47rem;
     overflow: auto;
   }
 }

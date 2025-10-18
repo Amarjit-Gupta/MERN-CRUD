@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import logo from '../assets/pass-icon.png'
 const Navbar = () => {
 
@@ -22,8 +22,8 @@ const Navbar = () => {
                 <>
                     <button className="ham-burger" onClick={() => setMenu(!menu)}>{menu ? <span className="cross-icon">&times;</span> : <span>&#9776;</span>}</button>
                     <ul className={`un ${menu ? "x1" : ""}`}>
-                        <li><Link to={"/"} onClick={() => setMenu(false)}>AllData</Link></li>
-                        <li><Link to={"/add"} onClick={() => setMenu(false)}>AddData</Link></li>
+                        <li><NavLink style={{textDecoration:"none"}} to={"/"} onClick={() => setMenu(false)}>AllData</NavLink></li>
+                        <li><NavLink style={{textDecoration:"none"}} to={"/add"} onClick={() => setMenu(false)}>AddData</NavLink></li>
                         <li className="logout"><button onClick={hanldeLogout} className="logout-btn">logout</button>&nbsp;<span className="name-icon">({user?.name.length>15?user?.name.slice(0,12)+"...":user?.name})</span></li>
                     </ul>
                 </>

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 if (!mongoose.connection.readyState) {
-    mongoose.connect(process.env.DATABASE_URI).then(() => {
+    mongoose.connect("mongodb+srv://guptaamarjit777:4CimwemWzP2chirV@my-cluster.pz0rn.mongodb.net/mern-project").then(() => {
         console.log("data's database connected..");
     }).catch((err) => {
         console.log("data's database connection failed...");

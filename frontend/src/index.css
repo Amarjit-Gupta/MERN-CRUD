@@ -435,7 +435,7 @@ input:focus {
 
 @media only screen and (max-width:1050px) {
   .allData-main {
-    width: 47rem;
+    width: 45rem;
     overflow: auto;
   }
 }

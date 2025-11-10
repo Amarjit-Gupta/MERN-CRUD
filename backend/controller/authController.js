@@ -213,7 +213,7 @@ export const sendOtp = async (req, res) => {
 export const updatePassword = async (req, res) => {
     try {
         const { email, otp, newPassword } = req.body;
-        if (!email, !otp, !newPassword) {
+        if (!email || !otp || !newPassword) {
             return res.status(400).json({ success: false, message: "Please provide email, otp, newPassword..." });
         }
         let user = await User.findOne({ email });
